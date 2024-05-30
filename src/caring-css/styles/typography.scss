@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2022-06-25 18:54:32
  * @LastEditors: Wanko
- * @LastEditTime: 2023-10-18 14:07:33
+ * @LastEditTime: 2024-05-25 15:31:29
  * @Description: 排版
  */
 .text-base {
@@ -84,11 +84,18 @@
   }
 }
 
+// 文本对齐：两端对齐
+.text-align-evently {
+  text-align: justify;
+  text-align-last: justify;
+}
+
+
 // 文字颜色
 @each $key, $value in red #e54d42, orange #f37b1d, yellow #fbbd08, green #39b54a,
   blue #0081ff, cyan #1cbbb4, purple #6739b6, mauve #9c26b0, pink #e03997,
   olive #8dc63f, brown #a5673f, grey #8799a3, gray #aaaaaa, white #fff,
-  black #000, ccc #ccc, 333 #333, 666 #666, 999 #999
+  black #000, ccc #ccc, eee #eee, 333 #333, 666 #666, 999 #999
 {
   .text-#{'' + $key} {
     color: $value;
@@ -126,6 +133,7 @@
     margin-right: 4px;
   }
 }
+
 
 .truncate,
 .line-1 {
