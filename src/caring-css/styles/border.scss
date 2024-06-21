@@ -97,3 +97,11 @@
 .border-current {
   border-color: currentColor;
 }
+
+// 取消边框
+.border-none {
+  border: none !important;
+  &::after {
+    border: none !important;
+  }
+}
