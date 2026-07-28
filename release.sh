@@ -17,13 +17,14 @@ echo  # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   echo "🕙 Releasing $VERSION ..."
-  
-  git ci "[build] $VERSION"
   npm version $VERSION --message "[release] $VERSION"
   cd src/caring-css
+  npm run build
   npm version $VERSION --message "[release] $VERSION"
+
+  git add .
+  git commit -m "[build] $VERSION"  
+  git push origin master
   npm publish
-  cd ../../
-  git cp "[release] $VERSION"
 fi
 echo "🎉 $VERSION version publish success"

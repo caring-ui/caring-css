@@ -10,7 +10,7 @@
   line-height: 24px;
 }
 
-@for $i from 10 through 16 {
+@for $i from 10 through 20 {
   .text-#{$i} {
     font-size: #{$i}px;
     line-height: #{$i + 8}px;
@@ -29,13 +29,11 @@
   line-height: 32px;
 }
 // 三级标题
-.text-20,
 .text-h3 {
   font-size: 20px;
   line-height: 28px;
 }
 // 四级标题
-.text-18,
 .text-h4 {
   font-size: 18px;
   line-height: 26px;
