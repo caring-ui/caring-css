@@ -1,6 +1,6 @@
 # caring-css
 基于tailwindcss 语法，适用于移动端的css框架，快速书写样式，让你的 css 开发如鱼得水
-## [文档](https://caring-ui.github.io/caring-ui-docs/module/caring-css.html)
+## [文档](https://caringui.cn/module/caring-css.html)
 
 ## 运行环境
 v14 Node
