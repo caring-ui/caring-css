@@ -23,27 +23,16 @@ ul {
   list-style: none;
 }
 
-// 全局盒模型
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-// 全局字体大小和颜色
-page,
-html {
-  color: #333;
-  font-size: 14px;
-}
-
 // 不可给page设置100%，会使得页面的原始滚动范围失效，如果页面过长，会使得滚动区域的内容在tabbar内（当tab存在或navbar存在时，100%会使得页面的高度是整个屏幕，tab的高度和navbar的高度不在里面）
 html,
 body,
 #app {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 14px;
 }
 
 .shadow {
