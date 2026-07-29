@@ -19,6 +19,7 @@
   "devDependencies": {
     "css-loader": "^6.7.2",
     "css-minimizer-webpack-plugin": "^4.2.2",
+    "csso": "^5.0.5",
     "mini-css-extract-plugin": "^2.7.1",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",

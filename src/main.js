@@ -11,7 +11,7 @@ import App from './App'
 Vue.config.productionTip = false
 
 App.mpType = 'app'
-import './caring-css';
+import 'caring-css';
 
 const app = new Vue({
   ...App

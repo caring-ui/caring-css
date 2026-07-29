@@ -25,7 +25,11 @@ module.exports = {
     ]
   },
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
+    minimizer: [
+      new CssMinimizerPlugin({
+        minify: CssMinimizerPlugin.cssoMinify
+      })
+    ]
   },
 
   plugins: [
